@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap'
+import { Navbar, NavDropdown, Form, FormControl, Button, Nav } from 'react-bootstrap' 
 import {
     BrowserRouter as Router,
     Switch,
@@ -9,7 +9,8 @@ import {
 
 import Home from './Home';
 import Contact from './Contact';
-import About from './About'
+import About from './About';
+import Viewemp from './Viewemp'; 
 
 export default class NavbarComp extends Component {
     render() {
@@ -18,7 +19,7 @@ export default class NavbarComp extends Component {
                 <div>
 
                     <Navbar bg="dark" variant={"dark"} expand="lg">
-                        <Navbar.Brand href="#">Navbar Demo Arjun Codes</Navbar.Brand>
+                        <Navbar.Brand href="#">SMRFT</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
@@ -29,6 +30,7 @@ export default class NavbarComp extends Component {
                                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                                 <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                                <Nav.Link as={Link} to="/viewemp">Viewemp</Nav.Link>
 
                             </Nav>
 
@@ -39,6 +41,9 @@ export default class NavbarComp extends Component {
                     <Switch>
                         <Route path="/about">
                             <About />
+                        </Route>
+                        <Route path="/viewemp">
+                            <Viewemp />
                         </Route>
                         <Route path="/contact">
                             <Contact />

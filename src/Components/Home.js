@@ -5,7 +5,7 @@ export default class Home extends Component {
         return (
             <div>
                 <h1>Home</h1>
-                <p>This is home.</p>
+                <p>Welcome to SMRFT</p>
             </div>
         )
     }
