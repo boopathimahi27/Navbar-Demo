@@ -13,6 +13,7 @@ const [error, setError] = useState(null);
             .then(
                 (data) => {
                     setIsLoaded(true);
+                    
                     setUsers({blogs: data});
                     console.log(data)
                 },

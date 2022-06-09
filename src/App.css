@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.main {
+  text-align: left;
+  justify-content: top;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background-color: #86dfbacb;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +23,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0a0b0f; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;

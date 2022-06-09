@@ -8,9 +8,7 @@ import {
 } from "react-router-dom";
 
 import Home from './Home';
-import Contact from './Contact';
-import About from './About';
-import Viewemp from './Viewemp'; 
+import Viewemp from './Viewemp.js'; 
 
 export default class NavbarComp extends Component {
     render() {
@@ -19,18 +17,16 @@ export default class NavbarComp extends Component {
                 <div>
 
                     <Navbar bg="dark" variant={"dark"} expand="lg">
-                        <Navbar.Brand href="#">SMRFT</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="navbarScroll" />
+                         
+                        <Navbar.Toggle aria-controls="navbarScroll" /> 
                         <Navbar.Collapse id="navbarScroll">
                             <Nav
-                                className="mr-auto my-2 my-lg-0"
-                                style={{ maxHeight: '100px' }}
+                                className= "mr-auto my-2 my-lg-0"
+                                style={{ maxHeight: '200px' }}
                                 navbarScroll
                             >
                                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                                <Nav.Link as={Link} to="/about">About</Nav.Link>
-                                <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-                                <Nav.Link as={Link} to="/viewemp">Viewemp</Nav.Link>
+                                <Nav.Link as={Link} to="/viewemp">Employee Details</Nav.Link>
 
                             </Nav>
 
@@ -39,14 +35,8 @@ export default class NavbarComp extends Component {
                 </div>
                 <div>
                     <Switch>
-                        <Route path="/about">
-                            <About />
-                        </Route>
                         <Route path="/viewemp">
                             <Viewemp />
-                        </Route>
-                        <Route path="/contact">
-                            <Contact />
                         </Route>
                         <Route path="/">
                             <Home />

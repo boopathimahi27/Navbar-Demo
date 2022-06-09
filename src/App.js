@@ -1,24 +1,18 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComp from './Components/NavbarComp';
+import profile  from "./images/smrft-logo.png"
 
 function App() {
   return (
 
     <div className="App">
-      <div class="row h-25 d-inline-block"> 
+      <div class=""> 
+  </div> 
+    <div className="main">
+      <img src={profile} className="smrft_logo" alt="logo" /> 
   </div>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"></a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="App.js">Profile</a></li>
-      <li><a href="App.js">Patients</a></li>
-    </ul>
-  </div>
-</nav>
+
   
 
       <NavbarComp/>
